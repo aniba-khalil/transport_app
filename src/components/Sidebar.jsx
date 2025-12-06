@@ -11,14 +11,17 @@ export default function Sidebar({ user, setPage }) {
             <button className="nav-item" onClick={() => setPage("gestion_bus")}>🚌 Gestion bus</button>
             <button className="nav-item" onClick={() => setPage("gestion_reservation")}>📋 Réservations</button>
             <button className="nav-item" onClick={() => setPage("reclamations")}>📢 Réclamations</button>
+            <button className="nav-item" onClick={() => setPage("scanner")}>📷 Scanner le code </button>
           </>
         )}
 
         {user.role === "client" && (
+          
           <>
-            <button className="nav-item" onClick={() => setPage("trajets")}>📦 Réserver</button>
-            <button className="nav-item" onClick={() => setPage("solde")}>💳 Solde</button>
-            <button className="nav-item" onClick={() => setPage("recharger")}>➕ Recharger Compte</button>
+          <p className="sidebar-title">solde: {user.sold} Dt</p>
+            <button className="nav-item" onClick={() => setPage("reserver")}> Réserver</button>
+            <button className="nav-item" onClick={() => setPage("add_reclamation")}> Ajouter Réclamation</button>
+            <button className="nav-item" onClick={() => setPage("recharger")}> Recharger Compte</button>
           </>
         )}
 

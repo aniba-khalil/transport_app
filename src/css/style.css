@@ -173,7 +173,12 @@
   margin: 10px auto;
 }
 
-
+.a1{
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  
+}
 .search-input {
   width: 100%;
   padding: 10px;
