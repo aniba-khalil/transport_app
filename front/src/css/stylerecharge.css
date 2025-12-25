@@ -1,0 +1,65 @@
+/* Style minimal pour Recharge.jsx */
+.recharge-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.account-info-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.recharge-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.recharge-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.recharge-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.info-card {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e9f7fe;
+  border-radius: 8px;
+}
+
+.info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-list li {
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.info-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}

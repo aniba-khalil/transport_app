@@ -1,0 +1,313 @@
+ background: /* Gestion des Réservations */
+.stats-summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  flex: 1;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+}
+
+.stat-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Table des voyages */
+.voyage-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.voyage-table th {
+  background: #3498db;
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  text-align: left;
+}
+
+.voyage-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.voyage-table tr:hover {
+  background: #f8f9fa;
+}
+.voyage-header,
+.voyage-header h3,
+.voyage-info p {
+  color: #1a1a1a !important; /* noir lisible */
+}
+
+.voyage-table tr.has-reservations {
+  background: #f0f9ff;
+}
+
+.reservation-count {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.reservation-count.active {
+  background: #28a745;
+  color: rgb(0, 0, 0);
+}
+
+.reservation-count:not(.active) {
+  background: #6c757d;
+  color: rgb(0, 0, 0);
+}
+
+.vehicle-info {
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.details-btn {
+  padding: 6px 12px;
+  background: #3498db;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.details-btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+.details-btn:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+/* Vue détaillée */
+.voyage-details-view {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background: #5a6268;
+}
+
+.voyage-header {
+  background: #1f487e !important;
+  color: white !important;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid;
+}
+
+.voyage-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.voyage-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Table des réservations détaillées */
+.reservations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.reservations-table th {
+  background: #2c3e50;
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  text-align: left;
+}
+
+.reservations-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 13px;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.status-badge.confirmée {
+  background: #28a745;
+  color: rgb(0, 0, 0);
+}
+
+.status-badge.annulée {
+  background: #dc3545;
+  color: rgb(0, 0, 0);
+}
+
+.status-badge.en_attente {
+  background: #ffc107;
+  color: #333;
+}
+
+.action-btn {
+  padding: 4px 8px;
+  background: #17a2b8;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.action-btn:hover {
+  background: #138496;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #3498db;
+}
+
+.message-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+.message-success {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+}
+/* ======== AMÉLIORATION DES COULEURS (VERSION LISIBLE) ======== */
+
+/* Titres */
+.gestion-container h2,
+.gestion-container h3,
+.gestion-container h4 {
+  color: #1a1a1a !important;
+}
+
+/* Table header (bleu foncé professionnel) */
+.voyage-table th,
+.reservations-table th {
+  background: #1f487e !important;
+  color: white !important;
+}
+
+/* Lignes tableau : texte foncé */
+.voyage-table td,
+.reservations-table td {
+  color: #222 !important;
+}
+
+/* Nombre de réservations */
+.reservation-count.active {
+  background: #2b8a3e !important; /* vert lisible */
+}
+
+.reservation-count:not(.active) {
+  background: #8a8a8a !important; /* gris + lisible */
+}
+
+/* Véhicule */
+.vehicle-info {
+  color: #d35400 !important; /* orange foncé */
+  font-weight: bold;
+}
+
+/* Bouton voir détails */
+.details-btn {
+  background: #1f6fba !important;
+}
+
+.details-btn:hover:not(:disabled) {
+  background: #145a96 !important;
+}
+
+/* Bouton retour */
+.back-btn {
+  background: #5a6268 !important;
+}
+
+/* Statuts */
+.status-badge.confirmée {
+  background: #2ecc71 !important;
+}
+
+.status-badge.annulée {
+  background: #e74c3c !important;
+}
+
+.status-badge.en_attente {
+  background: #f1c40f !important;
+  color: #000 !important;
+}
+
+/* Messages */
+.message-error {
+  background: #fbeaea !important;
+  color: #a30000 !important;
+}
+
+.message-success {
+  background: #eafbea !important;
+  color: #0f6300 !important;
+}
+
+/* Chargement */
+.loading {
+  color: #1f6fba !important;
+}
