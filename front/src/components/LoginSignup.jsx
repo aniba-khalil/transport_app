@@ -93,6 +93,7 @@ export default function LoginSignup() {
             <button className="auth-btn" onClick={handleLogin}>
               Se connecter
             </button>
+            <p>test admin : email:admin12345 password:admin12345</p>
 
             {error && <p className="error">{error}</p>}
             {success && <p className="success">{success}</p>}

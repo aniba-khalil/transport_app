@@ -19,6 +19,7 @@ CREATE TABLE users (
   n_tel INT NOT NULL UNIQUE,
   sold DECIMAL(10,2) NOT NULL
 );
+insert into users (email, password, role, nom_complete, n_tel, sold) values ('admin12345', 'admin12345', 'admin', 'Admin User', 1234567890, 100.00);
 
 /* =========================
    TABLE: bus
